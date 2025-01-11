@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --colorGray: #CCC;
+}
+
+* {
+    font-family: 'Encode Sans Expanded', serif;
+    font-size: 14px;
+    color: #333 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+.text-gray {
+    color: var(--colorGray) !important;
+}
+
+/* intro */
+
+.intro-item-lg {
+    height: 407px;
+}
+
+.intro-item-sm {
+    height: 200px;
+}
+
+@media (max-width: 768px) {
+    .intro-item {
+        height: 300px;
+    }
+}
+
+.intro-item-lg {
+    background: url("../images/slider-1-1200x900.jpg") center / cover no-repeat;
+}
+
+.bg-img-1 {
+    background: url("../images/slider-2-450x600.jpg") center / cover no-repeat;
+}
+
+.bg-img-2 {
+    background: url("../images/slider-3-450x600.jpg") center / cover no-repeat;
+}
+
+.bg-img-3 {
+    background: url("../images/slider-4-450x600.jpg") center / cover no-repeat;
+}
+
+.bg-img-4 {
+    background: url("../images/slider-5-450x600.jpg") center / cover no-repeat;
+}
+
+.bg-img-5 {
+    background: url("../images/slider-6-450x600.jpg") center / cover no-repeat;
+}
+
+.intro-item-caption {
+    background: rgba(0, 0, 0, .4);
+}
+
+.intro-item-caption > * {
+    position: absolute;
+    left: 20px;
+}
+
+.intro-item-caption h3 {
+    bottom: 50px;
+}
+
+.intro-item-caption ul {
+    bottom: 20px;
+}
+
+@media (max-width: 427px) {
+    .intro-item-caption h3 {
+        bottom: 70px;
+    }
+
+    .intro-item-caption ul {
+        bottom: 15px;
+    }
+}
+
+/* recent news, crypto mining news */
+
+/* .articles-title {
+    width: 99%;
+} */
+
+.articles-title::before {
+    content: "";
+    position: absolute;
+    left: 10.5px;
+    bottom: 0;
+    width: 80px;
+    height: 5px;
+    background-color: var(--bs-warning);
+    z-index: 1;
+}
+
+.articles-title::after {
+    content: "";
+    position: absolute;
+    left: 10.5px;
+    bottom: 0;
+    width: 97%;
+    height: 1px;
+    background-color: #CCC;
+}
+
+.popular-articles-title::after {
+    width: 94%;
+}
+
+@media (max-width: 993px) {
+    .articles-title::after {
+        width: 96%;
+    }
+}
+
+/* aside */
+
+@media (min-width: 768px) {
+    .popular-title {
+        margin-top: -5px;
+    }
+}
+
+@media (min-width: 993px) {
+    .popular-title {
+        margin-top: -9px;
+    }
+}
+
+.form-control:focus {
+    border-top-left-radius: .25rem !important;
+    border-bottom-left-radius: .25rem !important;
+    box-shadow: none;
+}
+
+.form-control:focus + .btn-warning {
+    border-top-right-radius: .25rem !important;
+    border-bottom-right-radius: .25rem !important;
+}
+
+/* footer */
+
+.footer {
+    background-color: #191919;
+}
+
+.footer-bg {
+    background: url("../images/map.png") center no-repeat;
+}
+
+.footer .row {
+    background-color: rgba(25, 25, 25, .9);
+}
+
+.footer .row:first-of-type {
+    border-color: rgba(170, 170, 170, .2) !important;
+}
+
+.footer-p {
+    font-size: 15px;
+}
+
+.footer-link {
+    border-color: rgba(170, 170, 170, .2) !important;
+}
+
+.footer-link > * {
+    font-size: 13px;
+}
+
+.footer-list-link {
+    font-size: 12px;
+}
